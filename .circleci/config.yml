@@ -6,5 +6,5 @@ jobs:
     parallelism: 30
     steps:
       - checkout
-      - run: wget get.sdkman.io
+      - run: wget https://get.sdkman.io
       - run: curl -s https://get.sdkman.io | bash
