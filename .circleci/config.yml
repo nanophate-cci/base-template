@@ -6,4 +6,4 @@ jobs:
     parallelism: 30
     steps:
       - checkout
-      - run: curl -s get.sdkman.io | bash
+      - run: curl -s "get.sdkman.io" | bash
