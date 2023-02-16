@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: cimg/base:stable
+    parallelism: 30
     steps:
       - checkout
       - run: curl -s get.sdkman.io | bash
