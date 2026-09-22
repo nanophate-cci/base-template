@@ -3,7 +3,8 @@ jobs:
   build:
     docker:
       - image: cimg/base:stable
-    # parallelism: 30 
+    environment:
+      GIT_SSH_COMMAND: ssh -vvv
     steps:
       - checkout
-      - run: git clone -vvv git://git.yoctoproject.org/opkg
+      - run: git clone git://git.yoctoproject.org/opkg
