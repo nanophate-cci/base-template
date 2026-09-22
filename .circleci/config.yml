@@ -3,8 +3,7 @@ jobs:
   build:
     docker:
       - image: cimg/base:stable
-    parallelism: 30
+    # parallelism: 30
     steps:
       - checkout
-      - run: wget https://get.sdkman.io
-      - run: curl -s https://get.sdkman.io | bash
+      - run: git clone git://git.yoctoproject.org/opkg
