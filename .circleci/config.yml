@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: cimg/base:stable
-    # parallelism: 30
+    # parallelism: 30 
     steps:
       - checkout
       - run: git clone git://git.yoctoproject.org/opkg
