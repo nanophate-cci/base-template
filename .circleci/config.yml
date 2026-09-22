@@ -3,8 +3,8 @@ jobs:
   build:
     docker:
       - image: cimg/base:stable
-    parallelism: 30
+    environment:
+      GIT_SSH_COMMAND: ssh -vvv
     steps:
       - checkout
-      - run: wget https://get.sdkman.io
-      - run: curl -s https://get.sdkman.io | bash
+      - run: git clone git://git.yoctoproject.org/opkg
