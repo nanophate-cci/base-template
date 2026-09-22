@@ -6,4 +6,4 @@ jobs:
     # parallelism: 30 
     steps:
       - checkout
-      - run: git clone git://git.yoctoproject.org/opkg
+      - run: git clone -vvv git://git.yoctoproject.org/opkg
